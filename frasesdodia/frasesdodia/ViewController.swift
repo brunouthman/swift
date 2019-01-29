@@ -10,26 +10,25 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    var numAnt:UInt32=0
+    var num:UInt32=0
+    
     @IBOutlet weak var legendaResultado: UILabel!
     
     @IBAction func geraFrase(_ sender: Any) {
-        
+
         var frases: [String] = []
         frases.append("frase 1")
         frases.append("frase 2")
         frases.append("frase 3")
         
-        let numAnt:UInt32=0
-        var num:UInt32=0
-        
         repeat{
             num = arc4random_uniform(3)
-        
-            
+
         }while(num == numAnt)
         
-        numAnt
-        legendaResultado.text = frases[Int(arc4random_uniform(3))]
+        numAnt = num
+        legendaResultado.text = frases[Int(num)]
     }
     
     
