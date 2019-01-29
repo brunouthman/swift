@@ -13,6 +13,8 @@ class ViewController: UIViewController {
     var num_ant:UInt32 = 0
     var num:UInt32 = 0
     
+    
+    
     @IBOutlet weak var exibeValor: UILabel!
     
     @IBAction func geraValor(_ sender: Any) {
