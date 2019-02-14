@@ -25,7 +25,7 @@ class ViewController: UIViewController {
                 
                 if campoValidado {
                     
-                    //calcula
+                    self.calcularMelhorValor(precoAlcool: precoAlcool, precoGasolina: precoGasolina)
                 
                 }else{
                     resultadoLegenda.text = "Digite valores!!!"
